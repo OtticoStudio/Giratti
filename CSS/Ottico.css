@@ -1,0 +1,192 @@
+
+:root {
+  --Purple: #4c2882;	 /* Spanish Violet */
+  --Purple-Drk: #1C0952; /* Russian Violet */
+  --Purple-Lght: #6C47B8;
+
+  --Wht: #FAF8F9;			/* White Cultured */
+  --Gold: #D3AA1D;			/* Gold Metallic */
+
+  --LightBlue: #6089D5;		  /* Glaucous */
+  --DarkBlue: #21296A; 		/* St Patrick's Blue */
+
+  /* Dark Theme */
+  --DrkBg: #1d1e22;
+  --redOnDrk: #FF7557;
+  --LightBlueOnDrk: #80E1D9;
+  --Mustard: #F8BC3B;
+}
+
+/* Snps */
+    .Subtitle {
+        text-transform: uppercase;
+        font-family: 'ApercuMonoProRegular';
+      }
+
+
+    .FlexCenter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .FlexRow {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+      .Flex2Col-5050 {
+        flex-basis: 50%;
+      }
+
+      .Flex2Col-6535-L {
+        flex-shrink: 0;
+        flex-basis: 65%; /* Sets inital width */
+        padding: 40px;
+      }
+      .Flex2Col-6535-R {
+        flex-shrink: 1;
+        flex-basis: 35%; /* Sets inital width */
+        padding: 40px;
+      }
+
+    @media only screen and (max-width: 800px) {
+      .FlexRow {
+          /* Organize items Vertically */
+          flex-direction: column;
+      }
+    }
+
+/* Fonts */
+  @font-face {
+  font-family: 'ApercuMonoProRegular';
+  src: url('ApercuMonoProRegular.ttf');
+  }
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+  }
+
+body {	
+	font-size: 18px;
+	font-family: 'Exo', sans-serif;
+	background: var(--Wht);
+}
+	ul {
+		list-style-type: none;
+		padding-left: 20px;
+	}
+
+
+
+	/* ----- */	
+	/* Links */
+	/* ----- */
+ a { text-decoration: none;	}
+ a:link    { color: blue; } 			
+ a:visited { color: var(--Purple-Lght); } 	  
+ a:hover   { color: var(--Wht); }
+ a:active  { color: var(--Wht); }
+
+
+
+
+	/* -------- */
+	/* Headings */
+	/* -------- */
+h1 { font-size: 3em; 	color: var(--Purple); }
+h2 { font-size: 2.4em; 	color: var(--Purple-Lght); }
+h3 { font-size: 2em;	color: var(--Purple-Drk); }
+h4 { font-size: 1.7em;  color: var(--Purple-Drk); }
+h5 { font-size: 1.4em;  color: black;}
+h6 { font-size: 0.85em; color: black;
+      letter-spacing: 0.17em;}
+p { 
+	font-size: 1em; 
+	font-weight: 500;
+	color: var(--Purple-Drk);
+}
+
+
+
+/* ---------- */
+/* Dark Theme */
+/* ---------- */
+.DrkMode {
+  background: var(--DrkBg);
+    }
+
+    .DrkMode h1 {
+      color: white;
+    }
+    .DrkMode h2 {
+      color: white;
+    }
+    .DrkMode h3 {
+      color: white;
+    }
+    .DrkMode h4 {
+      color: white;
+    }
+    .DrkMode h5 {
+      color: white;
+    }
+    .DrkMode h6 {
+      color: white;
+    }
+
+  .DrkMode p {
+    color: white;
+  }
+  .DrkMode a {
+    color: grey;
+  }
+
+
+
+
+
+ /* ------- */
+ /* Buttons */
+ /* ------- */ 
+.Btn4 {
+  position: relative;
+  padding: 10px 16px;
+  background-color: #FAFBFC;
+ 
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+ 
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  }
+
+.Btn4:hover {
+  background-color: var(--Purple-Lght);
+  border: 1px solid var(--Purple-Drk);
+  transition-duration: 0.1s;
+  color: var(--Gold);
+  font-weight: bold;
+}
+.Btn4:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
