@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title> Ottico Studio </title>	
+	<title> Giratti </title>	
 	
 	<link rel="stylesheet" href="CSS/Ottico.css">
 	<style type="text/css">
@@ -32,12 +32,11 @@
 
 
 
-	<!-- Ottico Banners -->
+	<!-- Banners -->
 	<style type="text/css">
 		.Banner-Sec {
 			position: relative;
 			height: 90vh;
-			background: linear-gradient(to right, #CE6EF0, #6FB0BE);
 		}
 			.Banner-Sec h1 {
 				font-size: 3.5em;
@@ -49,8 +48,7 @@
 
 			background: 
 				/* transparent gradient */ 
-			    linear-gradient(rgba(206, 110, 240, .75), rgba(111, 176, 190, .5)
-			    ), url("images/00-Home/Charles-Postiaux.jpg");
+			    linear-gradient(rgba(206, 110, 0, .75), rgba(111, 6, 190, .5)), url("images/00-Home/Jot217.jpg");
 			background-repeat: no-repeat;
 			width: 100%;
 			margin: 0 auto;
@@ -73,9 +71,9 @@
 		<div class="Banner-Pic">
 
 			<div class="Banner-Txt">
-				<h4> Digital Evolution </h4>
-				<h1> Ottico Studio </h1>
-				<p> SOFTWARE | WEB DESIGN | GAME DEV </p>
+				<h1> Giratti </h1>
+				<p> Tuts & Tips </p>
+				<a href="Unity/Unity.php"> Unity </a>
 			</div>
 
 		</div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Giratti </title>
+	<title> Unity 3D </title>
 
 
 	<link rel="stylesheet" href="../CSS/Ottico.css">
@@ -24,7 +24,7 @@
 	</style>
 
 	<section class="gBanner">
-		<h1> Giratti </h1>
+		<h1> Unity 3D </h1>
 	</section>
 
 
@@ -55,7 +55,7 @@
 	</style>
 
 	<section class="Multi">
-		<h1> Multiplayer  </h1>
+		<h2> Multiplayer  </h2>
 		<h3> Real-time Interaction </h3>
 
 		<ul>
