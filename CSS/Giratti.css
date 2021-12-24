@@ -17,12 +17,45 @@
   --Mustard: #F8BC3B;
 }
 
+/* ---------- */
+/* Dark Theme */
+/* ---------- */
+.DrkMode {
+  background: var(--DrkBg);
+    }
+
+    .DrkMode h1 {
+      color: white;
+    }
+    .DrkMode h2 {
+      color: white;
+    }
+    .DrkMode h3 {
+      color: white;
+    }
+    .DrkMode h4 {
+      color: white;
+    }
+    .DrkMode h5 {
+      color: white;
+    }
+    .DrkMode h6 {
+      color: white;
+    }
+
+  .DrkMode p {
+    color: white;
+  }
+  .DrkMode a {
+    color: grey;
+  }
+
+
 /* Snps */
     .Subtitle {
         text-transform: uppercase;
         font-family: 'ApercuMonoProRegular';
       }
-
 
     .FlexCenter {
       display: flex;
@@ -35,21 +68,60 @@
       display: flex;
       flex-direction: row;
       width: 100%;
+      padding: 20px 0px;
     }
-      .Flex2Col-5050 {
-        flex-basis: 50%;
+
+
+      .Flex2Col-3070-L {
+        flex-shrink: 0;
+        flex-basis: 30%; /* Sets inital width */
+        padding: 80px;
+      }
+      .Flex2Col-3070-R {
+        flex-shrink: 1;
+        flex-basis: 70%; /* Sets inital width */
+        padding: 80px;
       }
 
-      .Flex2Col-6535-L {
+        .Flex2Col-4060-L {
+          flex-shrink: 0;
+          flex-basis: 40%; /* Sets inital width */
+          padding: 80px;
+        }
+        .Flex2Col-4060-R {
+          flex-shrink: 1;
+          flex-basis: 60%; /* Sets inital width */
+          padding: 80px;
+        }
+
+          .Flex2Col-5050 {
+            flex-basis: 50%;
+            padding: 60px;
+          }
+
+        .Flex2Col-6040-L {
+          flex-shrink: 0;
+          flex-basis: 60%; /* Sets inital width */
+          padding: 80px;
+        }
+        .Flex2Col-6040-R {
+          flex-shrink: 1;
+          flex-basis: 40%; /* Sets inital width */
+          padding: 80px;
+        }
+
+      .Flex2Col-7030-L {
         flex-shrink: 0;
-        flex-basis: 65%; /* Sets inital width */
-        padding: 40px;
+        flex-basis: 70%; /* Sets inital width */
+        padding: 80px;
       }
-      .Flex2Col-6535-R {
+      .Flex2Col-7030-R {
         flex-shrink: 1;
-        flex-basis: 35%; /* Sets inital width */
-        padding: 40px;
+        flex-basis: 30%; /* Sets inital width */
+        padding: 80px;
       }
+
+
 
     @media only screen and (max-width: 800px) {
       .FlexRow {
@@ -102,7 +174,7 @@ body {
 	/* -------- */
 	/* Headings */
 	/* -------- */
-h1 { font-size: 3em; 	color: var(--Purple); }
+h1 { font-size: 3em; 	color: var(--Purple-Drk); }
 h2 { font-size: 2.4em; 	color: var(--Purple-Lght); }
 h3 { font-size: 2em;	color: var(--Purple-Drk); }
 h4 { font-size: 1.7em;  color: var(--Purple-Drk); }
@@ -116,39 +188,6 @@ p {
 }
 
 
-
-/* ---------- */
-/* Dark Theme */
-/* ---------- */
-.DrkMode {
-  background: var(--DrkBg);
-    }
-
-    .DrkMode h1 {
-      color: white;
-    }
-    .DrkMode h2 {
-      color: white;
-    }
-    .DrkMode h3 {
-      color: white;
-    }
-    .DrkMode h4 {
-      color: white;
-    }
-    .DrkMode h5 {
-      color: white;
-    }
-    .DrkMode h6 {
-      color: white;
-    }
-
-  .DrkMode p {
-    color: white;
-  }
-  .DrkMode a {
-    color: grey;
-  }
 
 
 
@@ -189,4 +228,34 @@ p {
   background-color: #EDEFF2;
   box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
   transition: none 0s;
+}
+
+
+
+/* Menu */
+nav {
+  position: relative;
+  height: 10vh;
+  width: 100%;
+  
+  color: var(--Mustard);
+  text-align: center;
+  background: black;
+  font-weight: 500;
+  padding: 30px;
+  top: 0%;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  height: 10vh;
+  width: 100%;
+  
+  color: var(--Mustard);
+  text-align: center;
+  background: black;
+  font-weight: 500;
+  padding: 20px;
+  bottom: 0%;
 }
