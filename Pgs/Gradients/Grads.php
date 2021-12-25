@@ -234,10 +234,22 @@
 						<div class="SwatchBot"> Shady Lane 
 							<div class="Tooltip">	
 								<span class="Tooltip-Txt" id="Tooltip"> Copy Me </span>		
-								<div class="SwatchCP" onclick="Clicked()" onmouseout="TxtReset()"> <i class="fa fa-copy" id="Copy"></i> </div>
+								<div class="SwatchCP" onclick="Clicked()"> <i class="fa fa-copy" id="Copy"></i> </div>
 							</div>
 						</div>
 					</div>
+
+					<script type="text/javascript">
+						
+						function Clicked() {
+							var gradColor = " background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%); ";
+							  navigator.clipboard.writeText(gradColor);
+							  
+							  var tooltip = document.getElementById("Tooltip");
+							  tooltip.innerHTML = "Copied!";
+						}
+
+					</script>
 
 					<div class="SwatchSq RetroWagon">
 						
@@ -550,26 +562,6 @@
 
 
 <footer> Giratti Footer </footer>
-
-
-	<script type="text/javascript">
-		
-		function Clicked() {
-			var copyText = document.getElementById("myInput");
-			  copyText.select();
-			  copyText.setSelectionRange(0, 99999);
-			  navigator.clipboard.writeText(copyText.value);
-			  
-			  var Tooltip = document.getElementById("Tooltip");
-			  tooltip.innerHTML = "Copied: " + copyText.value;
-		}
-
-		function TxtReset() {
-			var tooltip = document.getElementById("Tooltip");
-			tooltip.innerHTML = "Works"
-		}
-
-	</script>
 
 </body>
 

@@ -175,11 +175,11 @@
 	</style>
 	<section class="Swatches">
 		<div class="SwatchesTxt">
-			<h1> Cool Shades </h1>
+			<h1> Gradient Swatches </h1>
 			<p> Just Copy/Paste from our Gradient Bank </p>
 
 			<div class="Swatches-Btns">
-				<button class="Btn4"> <a href="Pgs/Gradients/Grads.php"> Gradients </a></button>
+				<button class="Btn4"> <a href="Pgs/Gradients/Grads.php"> Grad Bank </a></button>
 			</div>
 		</div>
 	</section>
