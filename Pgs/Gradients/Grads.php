@@ -39,7 +39,7 @@
 
 		.Banner-Pic {
 			position: relative;
-			height: 70vh;
+			height: 50vh;
 			width: 100%;
 
 			background: 
@@ -79,17 +79,45 @@
 	<!-- END Banners -->
 
 
+	<!-- Message -->
+	<style type="text/css">
+		.Msg {
+			position: absolute;
+			top: 48%;
+			left: 5%;
+			background: white;
+			border: 3px solid #DFE1E6;
+			border-radius: 10px;
+			width: 600px;
+			padding: 40px;
+		}
+		.Msg h2 {
+			font-size: 1.5em;
+			margin-bottom: 10px;
+		}
+	</style>
 
+	<section class="Msg">
+		
+		<h2> Take your pick from our Gradient Bank </h2>
+		<p> Thanks for checking us out! If you came here looking
+		for inspiration you've come to the right place. Feel free
+		to grab any gradient from our Gradient Collection. </p>
+	</section>
 
-
-
+	<style type="text/css">
+		.Separator {
+			background: var(--Wht);
+			height: 13.5vh;
+		}
+	</style>
+	<div class="Separator"></div>
 
 
 	<style type="text/css">
 		.GradBox {
 			position: relative;
-			width: 90%;
-			margin: 0 auto;
+			width: 75%;
 			height: auto;
 			margin-top: 40px;
 			margin-bottom: 40px;
@@ -218,7 +246,6 @@
 			<div class="GradRow FlexCenter">
 
 					<div class="SwatchSq VitalOcean">
-
 						<div class="SwatchTop"> </div>
 						<div class="SwatchBot"> Vital Oceans 
 							<div class="Tooltip">	
@@ -230,7 +257,6 @@
 
 					
 					<div class="SwatchSq ShadyLane">
-						
 						<div class="SwatchTop "> </div>
 						<div class="SwatchBot"> Shady Lane 
 							<div class="Tooltip">	
@@ -242,7 +268,6 @@
 
 
 					<div class="SwatchSq RetroWagon">
-						
 						<div class="SwatchTop "> </div>
 						<div class="SwatchBot"> Retro Wagon 
 							<div class="Tooltip">	
@@ -254,7 +279,6 @@
 					</div>
 
 					<div class="SwatchSq KaleSalad">
-						
 						<div class="SwatchTop "> </div>
 						<div class="SwatchBot"> Kale Salad
 							<div class="Tooltip">	
@@ -271,7 +295,6 @@
 			<div class="GradRow FlexCenter">
 
 					<div class="SwatchSq DiscoClub">
-						
 						<div class="SwatchTop"> </div>
 						<div class="SwatchBot"> Disco Club 
 							<div class="Tooltip">	
@@ -281,9 +304,8 @@
 						</div>
 					</div>
 
-					<div class="SwatchSq ShadyLane">
-						
-						<div class="SwatchTop SeaSalt"> </div>
+					<div class="SwatchSq SeaSalt">
+						<div class="SwatchTop"> </div>
 						<div class="SwatchBot"> Sea Salt 
 							<div class="Tooltip">	
 								<span class="Tooltip-Txt"> Copy Me </span>		
@@ -293,7 +315,6 @@
 					</div>
 
 					<div class="SwatchSq FrescoCrush">
-						
 						<div class="SwatchTop "> </div>
 						<div class="SwatchBot"> Fresco Crush 
 							<div class="Tooltip">	
@@ -304,7 +325,6 @@
 					</div>
 
 					<div class="SwatchSq LovelyLilly">
-						
 						<div class="SwatchTop "> </div>
 						<div class="SwatchBot"> Lovely Lilly 
 							<div class="Tooltip">	
@@ -550,7 +570,6 @@
 
 	</section>
 
-
 <footer> Giratti Footer </footer>
 
 
@@ -558,11 +577,11 @@
 	<script type="text/javascript">
 		
 		function Clicked() {
-			var gradColor = " background: linear-gradient(90deg, #1CB5E0 0%, #000851 10	0%); ";
+			  var gradColor = " background: linear-gradient(90deg, #1CB5E0 0%, #000851 10	0%); ";
 			  navigator.clipboard.writeText(gradColor);
 			  
-			  var Tooltip = document.getElementById("Tooltip");
-			  Tooltip.innerHTML = "Copied!";
+			  var tooltip = document.getElementById("Tooltip");
+			  tooltip.innerHTML = "Copied!";
 		}
 
 	</script>
