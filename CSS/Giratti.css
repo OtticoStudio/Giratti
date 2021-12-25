@@ -232,6 +232,19 @@ p {
 
 
 
+
+
+
+
+
+
+/* Font-Awesome */
+#Copy {
+  font-size: 1.3em; 
+  color: rgba(28, 15, 30, .8);
+}
+
+
 /* Menu */
 nav {
   position: relative;

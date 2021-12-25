@@ -1,16 +1,22 @@
 <html>
 
 <head>
-	<title> Gradients </title>	
+	<title> Stylish CSS Gradients to Pick </title>	
 	
 	<link rel="stylesheet" href="../../CSS/Giratti.css">
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 		@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 
 	</style>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- AdSense -->
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1788120362717693"
+     crossorigin="anonymous"></script>
 
 </head>
 
@@ -21,6 +27,7 @@
 
 	<!-- Banners -->
 	<style type="text/css">
+
 		.Banner-Sec {
 			position: relative;
 		}
@@ -72,6 +79,12 @@
 	<!-- END Banners -->
 
 
+
+
+
+
+
+
 	<style type="text/css">
 		.GradBox {
 			position: relative;
@@ -85,29 +98,41 @@
 		      display: flex;
 		      flex-direction: row;
 		      width: 100%;
-		      padding: 20px 0px;
+		      padding: 25px 0px;
 		    }
 
 		.SwatchSq {
 			display: inline-block;
 			margin-right: 20px;
 			width: 250px;
-			border-radius: 10px;
+			border-radius: 15px;
+			border: 1px solid #F5F6F7;
 		}
 		.SwatchTop {
 			position: relative;
 			height: 150px;
 			padding: 10px;
-			border-radius: 10px 10px 0 0;
 		}
 		.SwatchBot {
 			position: relative;
 			padding: 15px;
-			height: 60px;
 			background: rgba(255,255,255, 0.8);
-			border-radius: 0 0 10px 10px;
 			font-weight: bold;
 		}
+			.SwatchCP {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				padding: 15px;
+				border-radius: 0 0 10px 0;
+				background: rgba(255,255,255, 0.3);
+				transition: ease-in .4s;
+			}
+			.SwatchCP:hover {
+				background: rgba(149, 130, 173, 0.3);
+				cursor: pointer;
+				transition: ease-in .4s;
+			}
 
 	/* Gradient Swatches */
 	.VitalOcean { background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%); }
@@ -145,6 +170,46 @@
 	.CherryBlossom { background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%); }
 	.KeyMeh { background-image: linear-gradient(to right, #8360c3, #2ebf91); }
 
+
+
+
+
+	/* ToolTip */
+	  .Tooltip {
+	  }
+	    .Tooltip-Txt {
+	      position: absolute;
+	      visibility: hidden;
+	      bottom: 393%;
+	      left: 32.5%;
+	      z-index: 1;
+	      
+	      background-color: #555;
+	      text-align: center;
+	      border-radius: 5px;
+	      padding: 5px;
+	      width: 100px;
+	      color: #fff;
+	      
+	      transition: ease-in opacity 0.8s;
+	      opacity: 0;
+	    }
+	    .Tooltip-Txt::after {
+	      position: absolute;
+	      content: "";
+	      top: 100%;
+	      left: 45%;
+
+	      border: 6px solid;
+	      border-color: #555 transparent transparent transparent;
+	    }
+	  .Tooltip:hover .Tooltip-Txt {
+	    visibility: visible;
+	    opacity: 1;
+	  }
+
+
+
 	</style>
 
 	<section class="Grads">
@@ -156,25 +221,46 @@
 					<div class="SwatchSq VitalOcean">
 						
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Vital Ocean </div>
+						<div class="SwatchBot"> Vital Ocean 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq ShadyLane">
 						
 						<div class="SwatchTop "> </div>
-						<div class="SwatchBot"> Shady Lane </div>
+						<div class="SwatchBot"> Shady Lane 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq RetroWagon">
 						
 						<div class="SwatchTop "> </div>
-						<div class="SwatchBot"> Retro Wagon </div>
+						<div class="SwatchBot"> Retro Wagon 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
+						
 					</div>
 
 					<div class="SwatchSq KaleSalad">
 						
 						<div class="SwatchTop "> </div>
-						<div class="SwatchBot"> Kale Salad </div>
+						<div class="SwatchBot"> Kale Salad
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 			</div>	
@@ -186,25 +272,45 @@
 					<div class="SwatchSq DiscoClub">
 						
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Disco Club </div>
+						<div class="SwatchBot"> Disco Club 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq ShadyLane">
 						
 						<div class="SwatchTop SeaSalt"> </div>
-						<div class="SwatchBot"> Sea Salt </div>
+						<div class="SwatchBot"> Sea Salt 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq FrescoCrush">
 						
 						<div class="SwatchTop "> </div>
-						<div class="SwatchBot"> Fresco Crush </div>
+						<div class="SwatchBot"> Fresco Crush 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq LovelyLilly">
 						
 						<div class="SwatchTop "> </div>
-						<div class="SwatchBot"> Lovely Lilly </div>
+						<div class="SwatchBot"> Lovely Lilly 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					
@@ -218,22 +324,42 @@
 
 					<div class="SwatchSq OoeyGooey">	
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Ooey Gooey </div>
+						<div class="SwatchBot"> Ooey Gooey 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq AquaSpray">
 						<div class="SwatchTop "> </div>
-						<div class="SwatchBot"> Aqua Spray </div>
+						<div class="SwatchBot"> Aqua Spray 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq BloodyMimosa">
 						<div class="SwatchTop "> </div>
-						<div class="SwatchBot"> Bloody Mimosa </div>
+						<div class="SwatchBot"> Bloody Mimosa 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq MelloYellow">
 						<div class="SwatchTop "> </div>
-						<div class="SwatchBot"> Mello Yellow </div>
+						<div class="SwatchBot"> Mello Yellow 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 			</div>	
@@ -243,22 +369,42 @@
 
 					<div class="SwatchSq DustyCactus">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Dusty Cactus </div>
+						<div class="SwatchBot"> Dusty Cactus 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq Stellar">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Stellar </div>
+						<div class="SwatchBot"> Stellar 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq SandToBlue">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Sand to Blue </div>
+						<div class="SwatchBot"> Sand to Blue 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq DustyGrass">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Dusty Grass </div>
+						<div class="SwatchBot"> Dusty Grass
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 			</div>
@@ -269,22 +415,42 @@
 
 					<div class="SwatchSq Crystalline">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Crystalline </div>
+						<div class="SwatchBot"> Crystalline 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq Lawrencium">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Lawrencium </div>
+						<div class="SwatchBot"> Lawrencium 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq Happy">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Happy </div>
+						<div class="SwatchBot"> Happy 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq RedStrain">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Red Strain </div>
+						<div class="SwatchBot"> Red Strain 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 			</div>
@@ -294,22 +460,42 @@
 
 					<div class="SwatchSq Amin">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Amin </div>
+						<div class="SwatchBot"> Amin 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq SublimeLight">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Sublime Light </div>
+						<div class="SwatchBot"> Sublime Light 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq Megatron">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Megatron </div>
+						<div class="SwatchBot"> Megatron 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq BlueRaspberry">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Blue Raspberry </div>
+						<div class="SwatchBot"> Blue Raspberry 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 			</div>
@@ -319,22 +505,42 @@
 
 					<div class="SwatchSq KeyMeh">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> KeyMeh </div>
+						<div class="SwatchBot"> KeyMeh 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq CherryBlossom">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Cherry Blossom </div>
+						<div class="SwatchBot"> Cherry Blossom 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq SeaLord">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Sea Lord </div>
+						<div class="SwatchBot"> Sea Lord 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 					<div class="SwatchSq PinkFish">
 						<div class="SwatchTop"> </div>
-						<div class="SwatchBot"> Pink Fish </div>
+						<div class="SwatchBot"> Pink Fish 
+							<div class="Tooltip">	
+								<span class="Tooltip-Txt"> Copy Me </span>		
+								<div class="SwatchCP"> <i class="fa fa-copy" id="Copy"></i> </div>
+							</div>
+						</div>
 					</div>
 
 			</div>
