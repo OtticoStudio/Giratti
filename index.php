@@ -13,7 +13,7 @@
 	</style>
 
 </head>
-
+	
 
 <body>
 	
@@ -175,7 +175,7 @@
 	</style>
 	<section class="Swatches">
 		<div class="SwatchesTxt">
-			<h1> Shades </h1>
+			<h1> Cool Shades </h1>
 			<p> Just Copy/Paste from our Gradient Bank </p>
 
 			<div class="Swatches-Btns">
