@@ -171,8 +171,9 @@
 	.KeyMeh { background-image: linear-gradient(to right, #8360c3, #2ebf91); }
 
 
-
+	/* ------- */
 	/* ToolTip */
+	/* ------- */
 	  .Tooltip {
 	  }
 	    .Tooltip-Txt {
@@ -548,7 +549,7 @@
 	</section>
 
 
-<footer> Footer </footer>
+<footer> Giratti Footer </footer>
 
 
 
