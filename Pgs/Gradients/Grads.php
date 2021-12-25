@@ -228,17 +228,7 @@
 						</div>
 					</div>
 
-					<script type="text/javascript">
-						
-						function Clicked() {
-							var gradColor = " background: linear-gradient(90deg, #1CB5E0 0%, #000851 10	0%); ";
-							  navigator.clipboard.writeText(gradColor);
-							  
-							  var Tooltip = document.getElementById("Tooltip");
-							  Tooltip.innerHTML = "Copied!";
-						}
-
-					</script>
+					
 					<div class="SwatchSq ShadyLane">
 						
 						<div class="SwatchTop "> </div>
@@ -562,6 +552,20 @@
 
 
 <footer> Giratti Footer </footer>
+
+
+
+	<script type="text/javascript">
+		
+		function Clicked() {
+			var gradColor = " background: linear-gradient(90deg, #1CB5E0 0%, #000851 10	0%); ";
+			  navigator.clipboard.writeText(gradColor);
+			  
+			  var Tooltip = document.getElementById("Tooltip");
+			  Tooltip.innerHTML = "Copied!";
+		}
+
+	</script>
 
 </body>
 
