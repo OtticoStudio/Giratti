@@ -223,7 +223,7 @@
 						<div class="SwatchBot"> Vital Ocean  
 							<div class="Tooltip">	
 								<span class="Tooltip-Txt" id="Tooltip"> Copy Me </span>		
-								<div class="SwatchCP" onclick="Clicked()" onmouseout="TxtReset()"> <i class="fa fa-copy" id="Copy"></i> </div>
+								<div class="SwatchCP" onclick="Clicked()"> <i class="fa fa-copy" id="Copy"></i> </div>
 							</div>
 						</div>
 					</div>
@@ -231,7 +231,7 @@
 					<div class="SwatchSq ShadyLane">
 						
 						<div class="SwatchTop "> </div>
-						<div class="SwatchBot"> Shady Lssane 
+						<div class="SwatchBot"> Shady Lane 
 							<div class="Tooltip">	
 								<span class="Tooltip-Txt" id="Tooltip"> Copy Me </span>		
 								<div class="SwatchCP" onclick="Clicked()"> <i class="fa fa-copy" id="Copy"></i> </div>
