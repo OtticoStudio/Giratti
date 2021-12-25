@@ -231,7 +231,7 @@
 					<div class="SwatchSq ShadyLane">
 						
 						<div class="SwatchTop "> </div>
-						<div class="SwatchBot"> Shady Lane 
+						<div class="SwatchBot"> Shady Lssane 
 							<div class="Tooltip">	
 								<span class="Tooltip-Txt" id="Tooltip"> Copy Me </span>		
 								<div class="SwatchCP" onclick="Clicked()"> <i class="fa fa-copy" id="Copy"></i> </div>
