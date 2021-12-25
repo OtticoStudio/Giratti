@@ -242,11 +242,11 @@
 					<script type="text/javascript">
 						
 						function Clicked() {
-							var gradColor = " background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%); ";
+							var gradColor = " background: linear-gradient(90deg, #1CB5E0 0%, #000851 10	0%); ";
 							  navigator.clipboard.writeText(gradColor);
 							  
-							  var tooltip = document.getElementById("Tooltip");
-							  tooltip.innerHTML = "Copied!";
+							  var Tooltip = document.getElementById("Tooltip");
+							  Tooltip.innerHTML = "Copied!";
 						}
 
 					</script>
