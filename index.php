@@ -179,7 +179,7 @@
 			<p> Just Copy/Paste from our Gradient Bank </p>
 
 			<div class="Swatches-Btns">
-				<button class="Btn4"> <a href="Pgs/Gradients/Grads.php"> Grad Bank </a></button>
+				<button class="Btn4"> <a href="Tools/Gradients/Grads.php"> Grad Bank </a></button>
 			</div>
 		</div>
 	</section>
@@ -212,6 +212,7 @@
 			border-radius: 0.25em;
 			box-shadow: 0px 4px 10px #9b0123;
 			background-color: #1d1e22;
+			margin-bottom: 25px;
 		}
 
 			.CodeArea h3 {
@@ -237,6 +238,12 @@
 			</p>
 		</div>
 
+		<a href="Tutorials/Javascript/CopyToClipboard/CopyTextOneBtn.php">
+ 		 <button class="Btn4">
+			Javascript
+		 </button>
+		</a>
+		
 	</section>
 
 
